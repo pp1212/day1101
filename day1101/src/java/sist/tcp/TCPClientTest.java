@@ -11,9 +11,8 @@ public class TCPClientTest {
 		try {
 			
 			//1.서버에 통신을 요청
-			Socket socket = new Socket("192.168.35.67", 9001);
-			//Socket socket = new Socket("127.0.0.1", 9001);
-			//Socket socket = new Socket("localhost", 9001);
+			Socket socket = new Socket("localhost", 9001);
+			//Socket socket = new Socket("(여기에 ip주소 넣어도 됨)", 9001);
 			
 			//2.소켓을 통하여 데이터를 주고 받을 스트림을 생성
 			InputStream is = socket.getInputStream();

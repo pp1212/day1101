@@ -65,7 +65,7 @@ public class TCPChatClient extends JFrame implements ActionListener,Runnable{
 		try {
 			
 			//통신을 위하여 서버에 접속을 요청
-			Socket socket = new Socket("192.168.35.67",9003);
+			Socket socket = new Socket("localhost",9003);
 			
 			//입출력을 위한 스트림을 생성, 여기에서 객체를 생성해버리면 다른 곳에서 사용할 수 없으니까 맴버변수로
 			is = socket.getInputStream();
